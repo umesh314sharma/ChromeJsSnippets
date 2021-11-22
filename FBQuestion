@@ -1,0 +1,22 @@
+String myString1 = 'aaacccbbbbbdddd';
+List<string> arrstr = myString1.split('');
+Map<string, integer> mapval = new Map<string, Integer>();
+System.debug('size ***** size' + arrstr.size());
+integer i;
+String returnStr = '';
+for (string var : arrstr) {
+	if (!mapval.containskey(var)) {
+		i = 0;
+		mapval.put(var, i);
+	} else {
+		i++;
+		mapval.put(var, i + 1);
+	}
+}
+System.debug('Map ***** size' + mapval);
+System.debug('Map ***** size' + mapval.size());
+for (String key : mapval.keySet()) {
+	String item = String.valueof(mapval.get(key));
+	returnStr += key + item;
+}
+System.debug('ReturnString ***** size' + returnStr);

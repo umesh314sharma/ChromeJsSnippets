@@ -1,0 +1,76 @@
+{
+let x = 1
+let y = 2
+let z = 3
+console.log( {x, y, z} )
+
+let user = {
+  name: 'Jesse',
+  contact: {
+    email: 'codestackr@gmail.com'
+  }
+}
+console.log(user)
+console.log({user})
+//Variables within the log
+console.log("%s is %d years old.", "John", 29)
+
+//Variations of logs
+console.log('Console Log')
+console.info('Console Info')
+console.debug('Console Debug')
+console.warn('Console Warn')
+console.error('Console Error')
+
+let isItWorking = false
+console.assert(isItWorking, "this is the reason why");
+
+
+console.log('I am not in a group')
+//Groups.Labels can also be passed into the group() to better identify them.
+console.group()
+console.log('I am in a group')
+console.log('I am also in a group')
+console.groupEnd()
+
+console.log('I am not in a group')
+
+//Stack Trace
+function one() {
+  two()
+}
+function two() {
+  three()
+}
+function three() {
+  console.trace()
+}
+one()
+
+
+let devices = [
+  {
+    name: 'iPhone',
+    brand: 'Apple'
+  },
+  {
+    name: 'Galaxy',
+    brand: 'Samsung'
+  }
+]
+
+//Tables
+console.table(devices)
+
+
+//STYLES
+
+console.log("%c This is yellow text on a blue background.", "color:yellow; background-color:blue")
+
+//Clear
+//console.clear()
+//will give the time of execution with labelname.
+console.time("Promise.All");
+console.timeEnd("Promise.All");
+
+}

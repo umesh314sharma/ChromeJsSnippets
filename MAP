@@ -1,0 +1,4 @@
+{var jsonval='{"data":{"controllerValues":{},"defaultValue":null,"url":"/services/data/v47.0/ui-api/object-info/Payment__c/picklist-values/012350000007gukAAA/Payment_Method__c","values":[{"attributes":null,"label":"Declined","validFor":[],"value":"Declined"},{"attributes":null,"label":"Refund","validFor":[],"value":"Refund"},{"attributes":null,"label":"Credit or debit card","validFor":[],"value":"Credit or debit card"},{"attributes":null,"label":"Checking or savings account","validFor":[],"value":"Checking or savings account"},{"attributes":null,"label":"Check or money order","validFor":[],"value":"Check or money order"}]}}';
+var objval= JSON.parse(jsonval);
+console.log(Object.keys(objval));
+}

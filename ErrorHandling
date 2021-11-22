@@ -1,0 +1,18 @@
+{
+const people = ['chris', 'nick', 'holly'];
+
+// find chris
+const singlePerson = people.find(name => name === 'chris');
+
+console.log(singlePerson);
+// output: chris
+}
+{
+  class Foo {
+    constructor(val) {
+      this.bar = 'MyHardcodedVal'; // Here is the changed code
+    }
+  }
+  var f = new Foo('myVal');
+  console.log(f.bar); // STILL prints 'myVal'
+}

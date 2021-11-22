@@ -1,0 +1,6 @@
+{childlist=[{name:'a',age:10},{name:'b',age:20},{name:'c',age:30}];
+let foundchild=childlist.find(e=>e.name=='c');
+console.log({childlist});
+console.log(foundchild);
+foundchild.name='g';
+console.log({childlist});}

@@ -1,0 +1,11 @@
+{const formatLabels = (format, parameters) => {
+    const args = Array.from(parameters);
+    return format.replace(/{(\d+)}/g, (match, number) => {
+        return typeof args[number] != "undefined" ? args[number] : match;
+    });
+};
+
+console.log('%c Hello',"color:blue;background:pink");
+
+console.log(formatLabels('You have {0} days to renew your {1} Licence',[333,'Bike']));
+}

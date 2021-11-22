@@ -1,0 +1,7 @@
+let pokemon = {
+    "name": "Pikachu",
+    "id": 25,
+    "type": "electric",
+};
+let { type, name, moves } = pokemon;
+console.log(`Name :: ${name} ${type} ${moves}`);

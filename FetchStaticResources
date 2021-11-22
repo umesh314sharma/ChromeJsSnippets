@@ -1,0 +1,18 @@
+{
+
+        fetch(jsonDataEN)
+        .then((response) => {
+            if (!response.ok) {
+               console.log('rrrrr');
+            } else {
+               response.json()
+               .then((jsonResponse) => {
+                console.log('last test**' +JSON.stringify(jsonResponse));
+             })
+            }
+        })
+        .catch((error) => {
+            console.log('Errorrrrrrrrrrrrrrrrrrr' , error);
+         
+        });
+}

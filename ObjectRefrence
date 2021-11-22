@@ -1,0 +1,32 @@
+//https://medium.com/@williamgunawan22/javascript-tips-that-will-save-your-days-part-1-object-reference-af931291b21
+var products = [];
+var cart = [];
+var intializeProduct = ()=>{
+    products = [{
+        name: "product a",
+        color: "Red",
+        qty: 0
+    }, {
+        name: "product b",
+        color: "Blue",
+        qty: 0
+    }]
+}
+;
+var addProductToCart = productIndex=>{
+    cart.push(clone(products[productIndex]))
+}
+;
+var changeCartProuductQty = (cartIndex,qty)=>{
+    cart[cartIndex].qty = 3
+}
+;
+var clone=obj=> {
+    return JSON.parse(JSON.stringify(obj));
+};
+
+intializeProduct();
+addProductToCart(0);
+changeCartProuductQty(0, 3);
+addProductToCart(0);
+console.log(cart);
